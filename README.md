@@ -60,16 +60,16 @@ python predict.py my_digit.png
 
 | 情况 | 示例图片 | 说明 |
 | --- | --- | --- |
-| 比较理想的输入 | <img src="examples/sample_digit_5.png" width="120" alt="数字 5 示例"> | 数字比较居中，背景也比较干净，这种情况通常更容易识别。 |
-| 写得比较歪的数字 | <img src="examples/sample_digit_3_slanted.png" width="120" alt="倾斜数字 3 示例"> | 数字有一点倾斜，形状也不太标准，可能会影响预测结果。 |
-| 背景不太干净的图片 | <img src="examples/sample_digit_8_noisy.png" width="120" alt="带噪声数字 8 示例"> | 背景里有一些干扰线，类似截图、拍照或图片处理不干净的情况。 |
+| 手写数字 `3` | <img src="examples/3.png" width="120" alt="手写数字 3 示例"> | 线条比较细，和 MNIST 中粗一些的数字不完全一样。 |
+| 手写数字 `6` | <img src="examples/6.png" width="120" alt="手写数字 6 示例"> | 数字整体比较大，位置也不是完全居中，适合测试预处理效果。 |
+| 手写数字 `8` | <img src="examples/8.png" width="120" alt="手写数字 8 示例"> | 这是比较常见的手写数字形状，可以用来观察模型是否能识别连笔情况。 |
 
 可以用下面的命令测试：
 
 ```bash
-python predict.py examples/sample_digit_5.png
-python predict.py examples/sample_digit_3_slanted.png
-python predict.py examples/sample_digit_8_noisy.png
+python predict.py examples/3.png
+python predict.py examples/6.png
+python predict.py examples/8.png
 ```
 
 这些图片主要是为了展示输入效果。实际识别结果会受到模型训练情况、图片清晰度、数字位置和预处理方式的影响。
