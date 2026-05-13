@@ -12,6 +12,3 @@ Thumbs.db
 data/
 *.pth
 
-.claude/
-CLAUDE.md
-AGENTS.md
